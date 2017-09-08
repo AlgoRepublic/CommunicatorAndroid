@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Communicator</string>
+    <string name="powered_by_cyest_ims">Powered by Cyest IMS</string>
+    <string name="logo_string">communicator</string>
+    <string name="enter_pass">Password Required</string>
+    <string name="enter_email">Email Required</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="invalid_credentials">Invalid Credentials</string>
+</resources>

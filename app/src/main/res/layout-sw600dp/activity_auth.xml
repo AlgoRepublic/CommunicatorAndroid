@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:fillViewport="true"
+    tools:context="com.algorepublic.communicator.activities.CommunicatorMain">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/c_logo" />
+
+        <com.algorepublic.communicator.helper.TypeFaceTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivLogo"
+            android:layout_marginTop="30dp"
+            android:text="Communicator"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBaseBlue"
+            android:textSize="38sp"
+            app:customFont="Nirmala.ttf" />
+
+
+        <com.algorepublic.communicator.helper.TypeFaceEditText
+            android:id="@+id/edtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_edit_text"
+            android:hint="USER NAME"
+            android:minHeight="?attr/actionBarSize"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorBaseBlue"
+            android:textColorHint="@color/colorBaseBlue"
+            android:textSize="38sp"
+            app:customFont="Nirmala.ttf" />
+
+        <com.algorepublic.communicator.helper.TypeFaceEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtUserName"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_edit_text"
+            android:hint="PASSWORD"
+            android:inputType="numberPassword"
+            android:minHeight="?attr/actionBarSize"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorBaseBlue"
+            android:textColorHint="@color/colorBaseBlue"
+            android:textSize="38sp"
+            app:customFont="Nirmala.ttf" />
+
+        <com.algorepublic.communicator.helper.TypeFaceButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtPassword"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_button"
+            android:minHeight="?attr/actionBarSize"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="SUBMIT"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="38sp"
+            app:customFont="Nirmala.ttf" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
